@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assured Care | Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 flex flex-col min-h-screen">
+
+ <header class="bg-white shadow">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <a href="index.html" class="text-xl font-bold text-white mt-1 px-4 py-2 bg-blue-700 rounded-xl">Let's Pay</a>
+
+    <button id="menuBtn" class="md:hidden text-gray-700 focus:outline-none">
+      ☰
+    </button>
+
+    <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
+      <a href="#about" class="hover:text-blue-700">About</a>
+      <a href="#programs" class="hover:text-blue-700">Programs</a>
+      <a href="#payment" class="hover:text-blue-700">Pay Fees</a>
+      <a href="#contact" class="hover:text-blue-700">Contact</a>
+     <a href="login.html" class="hover:text-blue-700">Login</a>
+    </nav>
+  </div>
+
+  <nav id="mobileMenu" class="hidden flex-col space-y-4 px-4 pb-4 text-sm font-medium text-gray-600 md:hidden">
+    <a href="#about" class="hover:text-blue-700">About</a>
+    <a href="#programs" class="hover:text-blue-700">Programs</a>
+    <a href="#payment" class="hover:text-blue-700">Pay Fees</a>
+    <a href="#contact" class="hover:text-blue-700">Contact</a>
+    <a href="login.html" class="hover:text-blue-700">Login</a>
+  </nav>
+</header>
+
+  <!-- Login Box -->
+  <main class="flex flex-grow items-center justify-center px-4">
+    <div class="w-full max-w-md bg-white shadow-lg rounded-xl p-8 mt-6">
+      <h2 id="formTitle" class="text-2xl font-bold text-center text-blue-700 mb-6">Login</h2>
+
+      <!-- Login Form -->
+      <form id="loginForm" class="space-y-4">
+        <input type="email" placeholder="Email" required
+          class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <input type="password" placeholder="Password" required
+          class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded-lg hover:bg-blue-800">Login</button>
+      </form>
+
+      <!-- Create Account Form -->
+      <form id="createForm" class="space-y-4 hidden">
+        <input type="text" placeholder="Full Name" required
+          class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <input type="email" placeholder="Email" required
+          class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <input type="password" placeholder="Password" required
+          class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <button type="submit" class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700">Create Account</button>
+      </form>
+
+      <!-- Toggle Links -->
+      <p class="text-center text-gray-600 mt-6 text-sm">
+        <span id="toggleText">Don’t have an account?</span>
+        <a href="#" id="toggleLink" class="text-blue-700 font-medium hover:underline">Create one</a>
+      </p>
+    </div>
+  </main>
+
+  <script>
+    const loginForm = document.getElementById("loginForm");
+    const createForm = document.getElementById("createForm");
+    const toggleLink = document.getElementById("toggleLink");
+    const formTitle = document.getElementById("formTitle");
+    const toggleText = document.getElementById("toggleText");
+
+    // Toggle between login & signup
+    toggleLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (loginForm.classList.contains("hidden")) {
+        // Switch to login
+        loginForm.classList.remove("hidden");
+        createForm.classList.add("hidden");
+        formTitle.textContent = "Login";
+        toggleText.textContent = "Don’t have an account?";
+        toggleLink.textContent = "Create one";
+      } else {
+        // Switch to create account
+        loginForm.classList.add("hidden");
+        createForm.classList.remove("hidden");
+        formTitle.textContent = "Create Account";
+        toggleText.textContent = "Already have an account?";
+        toggleLink.textContent = "Login here";
+      }
+    });
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+   <section id="contact" class="py-6 bg-blue-200">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h3 class="text-2xl font-bold text-blue-700 mb-10">Get in Touch</h3>
+      <p class="text-black-600">Phone: +234 800 000 0000 | Email: info@assuredcareschool.com | Location: No. 123 Assured Road, Lagos, Nigeria</p>
+    </div>
+  </section>
+  
+  <footer class="bg-blue-900 text-white py-6 text-center text-sm">
+    &copy; 2025 Let's Pay. All Rights Reserved.
+  </footer>
+  
+  <script src="main.js"></script>
+</body>
+
+</html>
