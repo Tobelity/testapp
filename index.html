@@ -9,99 +9,228 @@
 </head>
 
 <body class="bg-gray-50 flex flex-col min-h-screen">
-  
+
   <header class="bg-white shadow">
-  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-    <a href="index.html" class="text-xl font-bold text-white mt-1 px-4 py-2 bg-blue-700 rounded-xl">Let's Pay</a>
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold text-white mt-1 px-4 py-2 bg-blue-700 rounded-xl">Let's Pay</a>
 
-    <button id="menuBtn" class="md:hidden text-gray-700 focus:outline-none">
-      ☰
-    </button>
+      <button id="menuBtn" class="md:hidden text-gray-700 focus:outline-none">
+        ☰
+      </button>
 
-    <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
+      <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
+        <a href="#about" class="hover:text-blue-700">About</a>
+        <a href="#programs" class="hover:text-blue-700">Programs</a>
+        <a href="#payment" class="hover:text-blue-700">Pay Fees</a>
+        <a href="#contact" class="hover:text-blue-700">Contact</a>
+        <a href="login.html" class="hover:text-blue-700">Login</a>
+      </nav>
+    </div>
+
+    <nav id="mobileMenu" class="hidden flex-col space-y-4 px-4 pb-4 text-sm font-medium text-gray-600 md:hidden">
       <a href="#about" class="hover:text-blue-700">About</a>
       <a href="#programs" class="hover:text-blue-700">Programs</a>
       <a href="#payment" class="hover:text-blue-700">Pay Fees</a>
       <a href="#contact" class="hover:text-blue-700">Contact</a>
-     <a href="login.html" class="hover:text-blue-700">Login</a>
+      <a href="login.html" class="hover:text-blue-700">Login</a>
     </nav>
-  </div>
+  </header>
 
-  <nav id="mobileMenu" class="hidden flex-col space-y-4 px-4 pb-4 text-sm font-medium text-gray-600 md:hidden">
-    <a href="#about" class="hover:text-blue-700">About</a>
-    <a href="#programs" class="hover:text-blue-700">Programs</a>
-    <a href="#payment" class="hover:text-blue-700">Pay Fees</a>
-    <a href="#contact" class="hover:text-blue-700">Contact</a>
-    <a href="login.html" class="hover:text-blue-700">Login</a>
-  </nav>
-</header>
-  
-  <section class="bg-blue-50 py-20">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4 text-blue-800">Nurturing Young Minds for a Brighter Tomorrow</h2>
-      <p class="text-lg text-gray-600">Welcome to Assured Care International School – a place for learning, growth, and
-        excellence.</p>
-      <a href="#payment" class="mt-6 inline-block px-6 py-3 bg-blue-700 text-white rounded-xl hover:bg-blue-800">Pay
-        School Fees</a>
+  <section class="relative bg-blue-50 py-20 bg-cover bg-center" style="background-image: url('images/bg-slider.jpg');">
+    <div class="absolute inset-0 bg-blue-900/50"></div>
+    <div class="relative max-w-4xl pl-10 text-left text-white">
+      <h2 class="text-4xl font-bold mb-8">
+        Seamless Payments for Schools & Businesses
+      </h2>
+      <p class="text-lg mb-6">
+        Pay bills, fees, and invoices the smart way fast, secure, and fully digital. Lets Pay helps you stay
+        on top of payments with ease and confidence
+      </p>
+      <a href="#payment" class="mt-6 inline-block px-6 py-3 bg-blue-700 text-white rounded-xl hover:bg-blue-800">
+        Get Started
+      </a>
     </div>
   </section>
-  
+
+
+
   <section id="about" class="py-16 bg-white">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h3 class="text-2xl font-bold mb-4 text-blue-700">About Us</h3>
-      <p class="text-gray-600">Assured Care International School is dedicated to delivering world-class education in a
-        safe, caring, and nurturing environment. We combine academic excellence with moral instruction to shape future
-        leaders.</p>
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div class="text-left">
+        <h3 class="text-2xl font-bold mb-4 text-blue-700">
+          About Lets Pay
+        </h3>
+        <p class="text-black-600">
+          At Lets Pay, we're transforming the way schools and businesses handle bill payments. Our platform is designed
+          for speed,
+          simplicity, and savings, offering a fully digital solution that takes the hassle out of managing payments.
+        </p>
+        <p>
+          Whether you're collecting tuition, paying vendors, or settling bills, Lets Pay ensures every transaction is
+          smooth, secure, and cost-effective
+        </p>
+      </div>
+
+      <div class="flex justify-center md:justify-end">
+        <img src="images/bg-slider.jpg" alt="About Assured Care International School"
+          class="rounded-2xl shadow-lg w-full mx-auto">
+      </div>
+      <div class="flex flex-wrap gap-3 justify-center md:justify-end">
+        <a href="#mission" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+          🚀 Fast Processing
+        </a>
+        <a href="#vision" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+          💰 Low Transaction Charges
+        </a>
+        <a href="#values" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+          🔒 Secure & Compliant
+        </a>
+      </div>
     </div>
   </section>
-  
+
+
   <section id="programs" class="py-16 bg-gray-100">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <h3 class="text-2xl font-bold text-blue-700 mb-8">Our Programs</h3>
+      <h3 class="text-2xl font-bold text-blue-700 mb-8 -mt-10">What We Offer</h3>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="bg-white p-6 shadow rounded-xl">
-          <h4 class="text-xl font-semibold mb-2">Pre-School</h4>
-          <p class="text-sm text-gray-600">A nurturing foundation for lifelong learning through play and interaction.
+          <div class="flex justify-center md:justify-end">
+        <img src="images/bg-slider.jpg" alt="About Assured Care International School"
+          class="rounded-2xl shadow-lg w-full mx-auto">
+      </div>
+          <h4 class="text-xl font-semibold mb-2">
+            Bill Payments
+          </h4>
+          <p class="text-sm text-gray-600">
+
+            Easily manage and pay utility, internet, and other service bills for your institution all in one place
           </p>
         </div>
+
         <div class="bg-white p-6 shadow rounded-xl">
-          <h4 class="text-xl font-semibold mb-2">Primary School</h4>
-          <p class="text-sm text-gray-600">Solid academic and moral training with focus on literacy, numeracy, and
-            creativity.</p>
+          <div class="flex justify-center md:justify-end">
+        <img src="images/bg-slider.jpg" alt="About Assured Care International School"
+          class="rounded-2xl shadow-lg w-full mx-auto">
+      </div>
+          <h4 class="text-xl font-semibold mb-2">
+            School Payments
+          </h4>
+          <p class="text-sm text-gray-600">
+            Let parents and students pay tuition, exam fees, or other charges online. Quick, traceable, and paperless
+          </p>
         </div>
+
         <div class="bg-white p-6 shadow rounded-xl">
-          <h4 class="text-xl font-semibold mb-2">Secondary School</h4>
-          <p class="text-sm text-gray-600">Empowering students with knowledge and values for future excellence.</p>
+          <div class="flex justify-center md:justify-end">
+        <img src="images/bg-slider.jpg" alt="About Assured Care International School"
+          class="rounded-2xl shadow-lg w-full mx-auto">
+      </div>
+          <h4 class="text-xl font-semibold mb-2">
+            Business Payments
+            <p class="text-sm text-gray-600">
+              Pay suppliers, contractors, or service providers instantly. No queues. No delays.
+          </h4>
+          </p>
         </div>
       </div>
     </div>
   </section>
-  
+
   <section id="payment" class="py-16 bg-grey-100">
-    <div class="max-w-xl mx-auto px-6 text-center">
-      <h3 class="text-2xl font-bold text-blue-700 mb-6">Pay School Fees</h3>
-      <form id="paymentForm" class="space-y-4 bg-gray-50 p-6 rounded-xl shadow-md">
-        <input type="text" placeholder="Full Name" required class="w-full px-4 py-2 border rounded" />
-        <input type="email" placeholder="Parent's Email" required class="w-full px-4 py-2 border rounded" />
-        <input type="number" placeholder="Amount (₦)" required class="w-full px-4 py-2 border rounded" />
-        <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded hover:bg-blue-800">Proceed to
-          Pay</button>
-      </form>
+  <div class="max-w-xl mx-auto px-6 text-center">
+    <h3 class="text-2xl font-bold text-blue-700 mb-6 -mt-10">Make a payment</h3>
+    <form id="paymentForm" class="space-y-4 bg-gray-50 p-6 rounded-xl shadow-md">
+      <input type="text" placeholder="Full Name" required class="w-full px-4 py-2 border rounded" />
+      <input type="email" placeholder="Email Address" required class="w-full px-4 py-2 border rounded" />
+
+      <select required class="w-full px-4 py-2 border rounded bg-white">
+        <option value="">Select Payment Type</option>
+        <option value="bill">Bill Payments</option>
+        <option value="school">School Payments</option>
+        <option value="business">Business Payments</option>
+      </select>
+
+      <a href="login.html" class="block w-full bg-blue-700 text-white py-2 rounded text-center hover:bg-blue-800">
+  Proceed to Pay
+</a>
+
+    </form>
+  </div>
+</section>
+
+<a href="https://wa.me/234808545353" target="_blank"
+   class="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition">
+
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M13.601 2.326A7.935 7.935 0 0 0 8 .5a7.935 7.935 0 0 0-5.601 1.826A7.935 7.935 0 0 0 .5 8c0 1.408.372 2.778 1.075 3.975L.5 15.5l3.623-1.066A7.935 7.935 0 0 0 8 15.5a7.935 7.935 0 0 0 5.601-2.326A7.935 7.935 0 0 0 15.5 8a7.935 7.935 0 0 0-1.899-5.674zm-5.6 11.42c-1.267 0-2.508-.341-3.601-.987l-.258-.152-2.146.631.63-2.127-.167-.272A6.377 6.377 0 0 1 1.625 8c0-3.526 2.85-6.375 6.376-6.375 1.704 0 3.305.664 4.507 1.866a6.364 6.364 0 0 1 1.867 4.509c0 3.525-2.85 6.375-6.374 6.375z"/>
+    <path d="M11.601 9.297c-.195-.098-1.152-.568-1.332-.633-.18-.065-.312-.098-.445.099-.133.195-.51.632-.625.764-.115.13-.23.146-.426.048-.195-.098-.825-.304-1.572-.97-.581-.518-.97-1.157-1.084-1.352-.114-.195-.012-.3.086-.397.088-.088.195-.23.293-.345.098-.115.131-.195.196-.325.065-.13.033-.244-.016-.342-.049-.098-.445-1.07-.61-1.465-.16-.384-.323-.33-.445-.335-.114-.004-.244-.005-.374-.005s-.342.049-.52.244c-.18.195-.682.665-.682 1.621s.698 1.88.795 2.008c.098.13 1.373 2.099 3.33 2.943.466.201.828.322 1.11.414.465.148.889.127 1.223.077.373-.055 1.152-.47 1.315-.925.162-.456.162-.846.114-.925-.049-.079-.178-.127-.373-.225z"/>
+  </svg>
+</a>
+
+ <footer id="footer" class="bg-blue-900 text-white py-10 text-sm">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+    <div>
+      <h3 class="text-lg font-bold mb-3">Let's pay</h3>
+      <p class="text-gray-300">
+        Lets Pay simplifies school and business payments with a fast, secure, and fully digital platform for 
+        smooth financial transactions
+      </p>
     </div>
-  </section>
-  
-  <section id="contact" class="py-16 bg-blue-200">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h3 class="text-2xl font-bold text-blue-700 mb-4">Get in Touch</h3>
-      <p class="text-gray-600 mb-4">Location: No. 123 Assured Road, Lagos, Nigeria</p>
-      <p class="text-gray-600">Phone: +234 800 000 0000 | Email: info@assuredcareschool.com</p>
+
+    <div>
+      <h3 class="text-lg font-bold mb-3">Quick Links</h3>
+      <ul class="space-y-2">
+        <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+        <li><a href="#about" class="hover:text-gray-300">About</a></li>
+        <li><a href="#programs" class="hover:text-gray-300">Services</a></li>
+        <li><a href="#payment" class="hover:text-gray-300">Make Payments</a></li>
+        <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+      </ul>
     </div>
-  </section>
-  
-  <footer class="bg-blue-900 text-white py-6 text-center text-sm">
-    &copy; 2025 Let's Pay. All Rights Reserved.
-  </footer>
-  
+
+    <div>
+      <h3 class="text-lg font-bold mb-3">Contact Info</h3>
+      <p class="text-gray-300">📍 12 Jesus Saves Road, Delta, Nigeria</p>
+      <p class="text-gray-300">📞 +234 800 000 0000</p>
+      <p class="text-gray-300">✉️ support@letspay.com</p>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-bold mb-3">Social Media</h3>
+      <div class="flex space-x-6">
+ 
+  <a href="#" class="hover:text-gray-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1 .9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12"/>
+    </svg>
+  </a>
+
+  <a href="#" class="hover:text-gray-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M18.24 2.25h3.39l-7.39 8.44 8.68 11.06h-6.8l-5.34-6.99-6.1 6.99H1.29l7.91-9.06L.5 2.25H7.5l4.82 6.42z"/>
+    </svg>
+  </a>
+
+  <a href="#" class="hover:text-gray-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3.5A5.5 5.5 0 1 0 17.5 13 5.5 5.5 0 0 0 12 7.5zm0 2A3.5 3.5 0 1 1 8.5 13 3.5 3.5 0 0 1 12 9.5zm4.8-3.6a1.3 1.3 0 1 0 1.3 1.3 1.3 1.3 0 0 0-1.3-1.3z"/>
+    </svg>
+  </a>
+</div>
+</div>
+ </div>
+
+ <button id="backToTop" 
+  class="hidden fixed bottom-6 right-6 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-800 transition -mt-8">
+  ↑
+</button>
+
+  <div class="border-t border-gray-700 mt-8 pt-4 text-center pt-12">
+    &copy; 2025 Let's Pay. All Rights Reserved
+  </div>
+</footer>
+
   <script src="main.js"></script>
   <script>
   </script>
